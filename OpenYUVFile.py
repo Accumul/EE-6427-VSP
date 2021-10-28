@@ -116,16 +116,5 @@ if __name__ == '__main__':
     MsePerFrameListLarge = list()
     FrameNo = list(range(1, 151))
 
-    Mse, MsePerFrameList = MSE(1, 2, width, height)
-    MsePerFrameListLarge.append(MsePerFrameList)
 
-    plt.title("MSE-FrameNo", fontsize=22)
-    plt.xlabel("FrameNo", fontsize=12)
-    plt.ylabel("MSE", fontsize=22)
-
-    plt.plot(FrameNo, MsePerFrameListLarge[0], color="blue", label='2000 bits/s', linewidth=1, marker="o", markersize=1,
-             markerfacecolor="red")
-    plt.savefig(r'F:\Master\NTU\6427-Video Signal Process\Assignment\ask', dpi=300)
-
-    plt.show()
-    #drawDiffR()
+    drawDiffR()
